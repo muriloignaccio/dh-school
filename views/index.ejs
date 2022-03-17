@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Escola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <a class="student-create" href="/alunos/create">
+        Adicionar novo aluno
+      </a>
+      <% alunos.forEach(aluno => { %>
+        <div class="student-card">
+          <p><%= aluno.nome %> <%= aluno.sobrenome %></p>
+          <p><strong>Ano de matrícula: </strong><%= aluno.ano_matricula %></p>
+          <a href="/alunos/<%= aluno.id %>/edit">Editar</a>
+        </div>
+        <% }) %>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body {
+  background-color: #F0F2F5;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.student-card {
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.student-create {
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  background-color: #33CC95;
+  color: #FFF;
+  padding: 20px 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: filter 0.3s;
+}
+
+.student-create:hover {
+  filter: opacity(0.7);
+}

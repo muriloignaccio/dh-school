@@ -25,10 +25,16 @@
                 <i class="fa fa-pencil" aria-hidden="true"></i>
                 Editar
               </a>
-              <a href="" class="student-delete">
+              <form action="/alunos/<%= aluno.id %>/delete?_method=DELETE" method="POST">
+                <button class="student-delete">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                  Deletar
+                </button>
+              </form>
+              <!-- <a href="" class="student-delete">
                 <i class="fa fa-trash" aria-hidden="true"></i>
                 Deletar
-              </a>
+              </a> -->
             </div>
           </div>
           <% }) %>

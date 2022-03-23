@@ -26,6 +26,15 @@ const AlunoController = {
     const aluno = await Aluno.findByPk(id);
 
     return response.render("editarAluno", { aluno })
+  },
+  destroy: async (request, response) => {
+    const { id } = request.params;
+
+    const aluno = await Aluno.findByPk(id);
+
+    await aluno.destroy();
+
+    return response.redirect("/alunos");
   }
 
 }

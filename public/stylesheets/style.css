@@ -102,12 +102,14 @@ body {
   justify-content: space-between;
 }
 
-.actions a {
+.actions a,
+.actions button {
   text-decoration: none;
   transition: filter .3s;
 }
 
-.actions a:hover {
+.actions a:hover,
+.actions button:hover {
   filter: opacity(0.7);
 }
 
@@ -116,5 +118,10 @@ body {
 }
 
 .student-delete {
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
   color: #E52E4D;
 }

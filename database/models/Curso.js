@@ -23,7 +23,12 @@ module.exports = (sequelize, DataTypes) => {
     Curso.belongsTo(models.Area, {
       foreignKey: "areas_id",
       as: "area"
-    })
+    });
+
+    Curso.hasMany(models.Turma, {
+      foreignKey: "cursos_id",
+      as: "turmas"
+    });
   }
 
   return Curso;
